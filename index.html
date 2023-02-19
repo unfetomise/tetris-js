@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <title>Best Tetris!</title>
+</head>
+
+<body>
+
+    <h3>Score:<span id="score">0</span></h3>
+    <button id="start-button">Start/Pause</button>
+
+    <div class="container">
+        <div class="grid">
+            <script>
+                for (let i = 0; i < 200; i++) {
+                    document.writeln("<div></div>");
+                }
+                for (let i = 0; i < 10; i++) {
+                    document.writeln('<div class="taken"></div>');
+                }
+            </script>
+        </div>
+
+        <div class="mini-grid">
+            <script>
+                for (let i = 0; i < 16; i++) {
+                    document.writeln('<div></div>');
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
